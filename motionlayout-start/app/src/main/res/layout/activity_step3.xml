@@ -17,8 +17,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/step3">
-
+    app:layoutDescription="@xml/step3"
+    app:motionDebug="SHOW_PATH">
 
     <ImageView
         android:id="@+id/background"
@@ -29,14 +29,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/background"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
 
     <ImageView
         android:id="@+id/moon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_moon"
-        android:tint="?colorOnPrimary" />
+        android:tint="?colorOnPrimary"
+        android:contentDescription="@null" />
 
     <TextView
         android:id="@+id/credits"
